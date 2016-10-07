@@ -17,4 +17,5 @@ nodejs chat application for linux terminal.
 <ul>
 <li>login and signup
 <li>saving chat to database
+<li>revamp of ui
 </ul>

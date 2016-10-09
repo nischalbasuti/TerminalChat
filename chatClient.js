@@ -1,3 +1,5 @@
+var ipAddress = 'http://localhost:8081';
+
 var express = require('express');
 var http = require('http');
 
@@ -5,7 +7,7 @@ var app = express();
 http.createServer(app);
 
 var querystring = require('querystring');
-var socket = require('socket.io-client')('http://localhost:8081');
+var socket = require('socket.io-client')(ipAddress);
 var stdin = process.openStdin();
 var prompt = require('prompt');
 var chalk = require("chalk");
@@ -50,13 +52,19 @@ var loginSchema = [
     }
 ];
 
+var messageSchema = [
+	{
+		name: 'message'
+	}
+];
+
 prompt.message = "";
 prompt.start();
 login();
 
 //function to send messages.....................................................
 function sendMessage() {
-    prompt.get(['message'], function(err, result) {
+    prompt.get(messageSchema, function(err, result) {
         process.stdout.clearLine();
         process.stdout.cursorTo(0);
         if (err) {

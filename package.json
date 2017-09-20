@@ -1,0 +1,37 @@
+{
+  "name": "terminal-chat",
+  "version": "1.0.0",
+  "description": "nodejs chat application for linux terminal.",
+  "main": "chatClient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nischalbasuti/TerminalChat.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nischalbasuti/TerminalChat/issues"
+  },
+  "homepage": "https://github.com/nischalbasuti/TerminalChat#readme",
+  "devDependencies": {
+    "body-parser": "^1.18.1",
+    "chalk": "^2.1.0",
+    "express": "^4.15.4",
+    "prompt": "^1.0.0",
+    "querystring": "^0.2.0",
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "chalk": "^2.1.0",
+    "express": "^4.15.4",
+    "prompt": "^1.0.0",
+    "querystring": "^0.2.0",
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.0.3"
+  }
+}
